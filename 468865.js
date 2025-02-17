@@ -19,7 +19,7 @@ plantData = {
     nativeRegion: "Brasil",
     sustainability: "Melhora o solo",
     popularNames: ["Pitangueira", "Cerejeira-do-rio-grande"],
-    image: "http://3.bp.blogspot.com/-alOhJ1MaRNA/TkXfsd6LBvI/AAAAAAAAAMM/Rx5OCkf5tAY/s1600/eugenia.jpg",
+    image: "https://arvore.aperamservicos.com.br/wp-content/uploads/2014/11/Eugenia_Uniflora_11.jpg",
     about: `A Pitangueira Comum é uma planta de pequeno porte, com folhas ovais e brilhantes de um verde intenso. Suas folhas são simples, com nervuras bem definidas e uma textura levemente coriácea (similar a couro).
 O tronco é delgado (fino e estreito), de coloração marrom-claro, com uma casca fina que se descasca da árvore à medida que envelhece.
 A planta possui uma copa compacta, com ramos finos e flexíveis, que podem se espalhar formando uma pequena árvore ou arbusto. Suas raízes são rasas, ideal para áreas com solo bem drenado.
