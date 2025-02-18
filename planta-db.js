@@ -27,47 +27,24 @@ return text
 }
 
 window.normalizedIndex = {};
-
 for (let key in window.plantIndex) {
-
 window.normalizedIndex[normalizeText(key)] = window.plantIndex[key];
 
 }
 
 function buscarPlantas(nome) {
     let nomeNormalizado = normalizeText(nome);
-    let arquivosVistos = new Set();
     let resultados = [];
 
     for (let key in window.plantIndex) {
         if (normalizeText(key).includes(nomeNormalizado)) {
-            let arquivo = window.plantIndex[key];
-
-            if (typeof arquivo === "string") {
-                // Se for uma string, adiciona diretamente
-                if (!arquivosVistos.has(arquivo)) {
-                    arquivosVistos.add(arquivo);
-                    resultados.push(arquivo);
-                }
-            } else if (Array.isArray(arquivo)) {
-                // Se for um array, adiciona todos os itens únicos
-                for (let item of arquivo) {
-                    if (!arquivosVistos.has(item)) {
-                        arquivosVistos.add(item);
-                        resultados.push(item);
-                    }
-                }
-            } else if (typeof arquivo === "object" && arquivo !== null) {
-                // Se for um objeto, pega todos os valores e adiciona
-                for (let valor of Object.values(arquivo)) {
-                    if (!arquivosVistos.has(valor)) {
-                        arquivosVistos.add(valor);
-                        resultados.push(valor);
-                    }
-                }
-            }
+            let arquivos = Array.isArray(window.plantIndex[key]) 
+                ? window.plantIndex[key] 
+                : [window.plantIndex[key]];
+            
+            resultados.push({ nome: key, arquivos });
         }
     }
 
-    return resultados.length > 0 ? resultados : [null];
+    return resultados.length > 0 ? resultados : [{ nome: "Nenhuma planta encontrada.", arquivos: [] }];
 }
