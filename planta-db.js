@@ -1,12 +1,6 @@
 /* Banco de Dados */
 window.plantIndex = {
-"Pitangueira": "468865.js",
-"Pitangueira Comum": "468865.js",
-"Alta Pitangea": "468865.js",
-"Eugenia Uniflora": "468865.js",
-"Cerejeira do Rio Grande": "468865.js",
-"Pitangea": "468865.js",
-"Pitanga": "468865.js"
+"Pitangueira": "468865.js"
 };
 
 /* Normalizador, permite o usuário pesquisar de diversas formas */
